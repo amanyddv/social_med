@@ -77,7 +77,7 @@ export class ServiceService {
   send(msg:any){
     this.msgData.msg=msg.msg
     this.msgData.email=this.user.email
-    return this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev",this.msgData)
+    return this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/send",this.msgData)
   }
   forget(detail:any){
     console.log(detail)
