@@ -81,10 +81,10 @@ export class ServiceService {
   }
   forget(detail:any){
     console.log(detail)
-    this.http.post<any>("http://localhost:7000/forget",detail).subscribe() 
+    this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/forget",detail).subscribe() 
   }
   changepic(pic:any){
-    this.http.post<any>("http://localhost:7000/changepic",pic).subscribe((res)=>{
+    this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/changepic",pic).subscribe((res)=>{
       this.user.profile=res;
       console.log(res)
     })
