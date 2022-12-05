@@ -29,7 +29,8 @@ export class ServiceService {
   }
   addData(data:any){
     this.userPost=null
-    this.http.post<any>("http://localhost:7000/addData",data).subscribe((res)=>{
+    console.log(data)
+    this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/addData",data).subscribe((res)=>{
       this.info(res)
     })
 
@@ -37,19 +38,19 @@ export class ServiceService {
   
 //post a pic
   addPost(data:any){
-    return this.http.post<any>("http://localhost:7000/addPost",data)
+    return this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/addPost",data)
   }
 
   
   
 // user login function 
   login(data:any){
-    this.http.post<any>("http://localhost:7000/showData",data).subscribe((res)=>{
+    this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/showData",data).subscribe((res)=>{
       this.info(res)
       
     });
 
-    this.http.post<any>("http://localhost:7000/feed",data).subscribe((res)=>{
+    this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/feed",data).subscribe((res)=>{
       this.userPost=res
     })
     
@@ -57,7 +58,7 @@ export class ServiceService {
 
 //all member 
   people():Observable<any>{
-    return this.http.get("http://localhost:7000/peopleInfo")
+    return this.http.get("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/peopleInfo")
   }
 
   logout(){
@@ -67,7 +68,7 @@ export class ServiceService {
   }
   //chat
   chat():Observable<any>{
-    return this.http.get("http://localhost:7000/chat")
+    return this.http.get("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/chat")
   }
   msgData={
     email:"",
@@ -76,7 +77,7 @@ export class ServiceService {
   send(msg:any){
     this.msgData.msg=msg.msg
     this.msgData.email=this.user.email
-    return this.http.post<any>("http://localhost:7000/send",this.msgData)
+    return this.http.post<any>("https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github.dev/send",this.msgData)
   }
   forget(detail:any){
     console.log(detail)
