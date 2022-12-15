@@ -1,36 +1,42 @@
-
-                .main{
-                    position: absolute;
-                    top: 80px;
-                    left:2px;
-                   
-                width: 2200px;
-                height: 1000px;
-                
-                background: #71dae6;
-                }
-.msgbx{
-   
-    position: fixed;
-    right:105px;
-    height: 40px;
-    bottom:20px
-}
-.msg{
-    position: relative;
-    top:0px;
-    left:15px;
-}
-.send{
+.main {
     position: absolute;
-width: 100px;
-height: 40px;
+    top: 80px;
+    left: 2px;
 
-background: #21df6d;
-border-radius: 90px;
+    width: 2200px;
+    height: 1000px;
+
+    background: #71dae6;
+}
+.icon{
+    position:fixed;
+    top:7px;
+    right:7px;
+}
+.msgbx {
+
+    position: fixed;
+    right: 105px;
+    height: 40px;
+    bottom: 20px
 }
 
-.msgg{
+.msg {
+    position: relative;
+    top: 60px;
+    left: 15px;
+}
+
+.send {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+
+    background: #21df6d;
+    border-radius: 90px;
+}
+
+.msgg {
     position: relative;
     width: 650px;
     height: 40px;

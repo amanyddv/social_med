@@ -1,39 +1,36 @@
-
 <nav class="navbar navbar-dark bg-primary">
     
-  <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" routerLink="../profile" >PROFILE</a>
-      </nav>
-   
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" routerLink="../people" >PEOPLE</a>
-      </nav>
-  
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" routerLink="../chat" >CHAT</a>
-      </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" routerLink="../profile" >PROFILE</a>
+        </nav>
+     
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" routerLink="../people" >PEOPLE</a>
+        </nav>
     
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" (click)="logout()" routerLink="../login" >LOGOUT</a>
-      </nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" (click)="logout()" routerLink="../login" ></a>
-      </nav>
-    
-    
-    <nav class="icon"><img src="./assets/images (1).png" width="250" height="100"></nav>
-  </div> 
-</nav>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" routerLink="../chat" >CHAT</a>
+        </nav>
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" (click)="logout()" routerLink="../login" >LOGOUT</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" (click)="logout()" routerLink="../login" ></a>
+        </nav>
+      
+      
+      <nav class="icon"><img src="./assets/images (1).png" width="250" height="100"></nav>
+    </div> 
+  </nav>
 <div class="main">
     <section *ngFor="let l of data ">
     <div><h5>Email: &nbsp; {{l.email}}</h5></div>
     <div class="msg">{{l.msg}}</div>
     </section>
-
+</div>
 <form class="msgbx" #msg="ngForm">
     <input type="text" name="msg"  class="msgg" ngModel >
     <button (click)="send(msg.value)" class="send" >send</button>
 </form>
-</div>
