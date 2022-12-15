@@ -1,11 +1,32 @@
-<div class="btn-group" class="d-flex justify-content-center " role="group" >
-    <button class="btn btn-outline-primary tec1" routerLink="../profile" ><h2>Profile</h2></button>
-<button class="btn btn-outline-primary tec2" routerLink="../people"><h2>People</h2></button>
-<button class="btn btn-outline-primary tec3"  routerLink="../chat" ><h2>Chat</h2></button>
-<button class="btn btn-outline-primary tec4" (click)="logout()" routerLink="../login"  ><h2>Logout</h2></button>
-</div>
 
-<div class="assign">    
+<nav class="navbar navbar-dark bg-primary">
+    
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" routerLink="../profile" >PROFILE</a>
+      </nav>
+   
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" routerLink="../people" >PEOPLE</a>
+      </nav>
+  
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" routerLink="../chat" >CHAT</a>
+      </nav>
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" (click)="logout()" routerLink="../login" >LOGOUT</a>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" (click)="logout()" routerLink="../login" ></a>
+      </nav>
+    
+    
+    <nav class="icon"><img src="./assets/images (1).png" width="250" height="100"></nav>
+  </div> 
+</nav>
+
+<div class="main">    
     <table class="table table-striped">
         <thead >
             <tr>
@@ -21,7 +42,7 @@
                 <th class="">{{ i + 1 }} </th>
                 <td class="">
                     <img 
-                        src="https://amanyddv-sturdy-carnival-q5pqx74q7w52xqxg-7000.preview.app.github.dev/profilePic/{{people.profile}}"
+                        src="http://localhost:7000/profilePic/{{people.profile}}"
                         class="me-2" class="rounded-lg"
                         width="50" height="50"
                     />

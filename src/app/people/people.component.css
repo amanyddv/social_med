@@ -1,40 +1,14 @@
-.tec1{position: absolute;
-    width: 319px;
-    height: 79px;
-    left: 259px;
-    top: 0px;
-    
-    
-    border-radius: 90px;}
-.tec2{position: absolute;
-        width: 319px;
-        height: 79px;
-        left: 578px;
-        top: 0px;
-        
-        
-        border-radius: 90px;}
-        
-.tec3{position: absolute;
-            width: 319px;
-            height: 79px;
-            left: 897px;
-            top: 0px;
-            
-            
-            border-radius: 90px;}
-.tec4{position: absolute;
-                width: 319px;
-                height: 79px;
-                left: 1216px;
-                top: 0px;
+
+.main{
+                    position: absolute;
+                    top: 80px;
+                    left:2px;
+                   
+                width: 2200px;
+                height: 1000px;
                 
-                
-                border-radius: 90px;}
-.assign{position: relative;
-    top:85px;
-    
-}
+                background: #71dae6;
+                }
 .msgbx{
     overflow: auto;
     position: fixed;
