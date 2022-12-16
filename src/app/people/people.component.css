@@ -5,6 +5,7 @@
 
     width: 2200px;
     height: 1000px;
+    font-size: x-large;
 
     background: #71dae6;
 }
@@ -20,4 +21,8 @@
     position: fixed;
 
 
+}
+.font{
+    padding-top: 25px;
+    font-weight:500;
 }
