@@ -2,10 +2,18 @@
     <div class="form">
         <form #userForm="ngForm" >
             <div class="icon"><img src="./assets/image.png" width="250" height="60"></div>
+
         <img class="img" [src]="img" width="170" height="170">
         <h2 class="fw-bold mb-2 text-uppercase logo">SIGNUP</h2>
 
-        <input class="imgs" type="file" (change)="image($event)" placeholder="">
+        <div >
+            <label class="imgs" for="file-input">
+              <img src="./assets/pngegg.png" widht="20px" height="20px"/>
+            </label>
+            <input   class="imgs" id="file-input" type="file" (change)="image($event)" >
+          
+        </div>
+        
 
         <input  class="name" type="text" name="name" placeholder="Name" ngModel><br>
         <div class="namel"></div>
