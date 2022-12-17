@@ -7,14 +7,26 @@
     
     <h5 style="text-transform:uppercase " >Email: &nbsp; {{user.email}}</h5>
     <form #pic="ngForm" (ngSubmit)="changepic(pic.value)">
-        <input type="file" class="cho"  (change)="picture($event)">
+        <label for="file-input">
+            <img src="./assets/pngegg.png" widht="20px" height="30px"/>
+          </label>
+
+          <input class="downimg"  id="file-input" type="file" (change)="image($event)"  >
+
         <button click="submit" class="btn btn-outline-success cho">Change</button><br>
     </form> 
 </div>
 
 <div class="post">
     <form #post="ngForm" (ngSubmit)="Post(post.value)">
-        <input type="file" class="cho" (change)="image($event)"><br>
+        
+            <label for="file-input">
+              <img src="./assets/pngegg.png" widht="20px" height="30px"/>
+            </label>
+            <input   class="downimg" id="file-input" type="file" (change)="image($event)" >
+          
+       
+
         <input type="text" class="msg" name="comment" placeholder=Caption_OR_Comment ngModel>
         <button click="submit" class="btn btn-outline-success submit">Post</button>
     </form>
