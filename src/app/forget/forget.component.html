@@ -1,13 +1,25 @@
-<form #userForm ="ngForm">
-    <input  class="" type="text" name="email" placeholder="EMAIL" ngModel><br>
-    <div class=""></div>
 
-    <input class="" type="password" name="oldpassword" placeholder="OLD PASSWORD" ngModel><br>
-    <div class=""></div>
-    
-    <input class="" type="password" name="newpassword" placeholder="NEW PASSWORD" ngModel><br>
-    <div class=""></div>
+  
+<div class="main">
+  <div class="form">
+      <div class="icon"><img src="./assets/image.png" width="230" height="60"></div>
+                <h2 class="fw-bold mb-2 text-uppercase logo">FORGET</h2>
 
+                <form #userForm ="ngForm">
+                  <input  class="email" type="text" name="email" placeholder="Email" ngModel><br>
+                  <div class="emaill"></div>
+  
+                  <input class="oldpassword" type="password" name="oldpassword" placeholder="Old Password" ngModel><br>
+                  <div class="oldpasswordl"></div>
 
-  <button class="" (click)="forget(userForm.value)" routerLink="../{{logi}}">Forget</button>
-  </form>
+                  <input class="newpassword" type="password" name="newpassword" placeholder="New Password" ngModel><br>
+                  <div class="newpasswordl"></div>
+                  
+  
+  
+                <button class="login" (click)="forget(userForm.value)" routerLink="../{{logi}}">Forget</button>
+                </form>
+
+           
+              </div>
+  </div>

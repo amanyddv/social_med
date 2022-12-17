@@ -1,43 +1,17 @@
+<app-header></app-header>
 
-<nav class="navbar navbar-dark bg-primary">
-    
-    <div class="container pad" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <a class="navbar-brand" routerLink="../profile" >PROFILE</a>
-        </nav>
-     
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <a class="navbar-brand" routerLink="../people" >PEOPLE</a>
-        </nav>
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <a class="navbar-brand" routerLink="../chat" >CHAT</a>
-        </nav>
-      
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <a class="navbar-brand" (click)="logout()" routerLink="../login" >LOGOUT</a>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <a class="navbar-brand" (click)="logout()" routerLink="../login" ></a>
-        </nav>
-      
-      
-      <nav class="icon"><img src="./assets/images (1).png" width="250" height="100"></nav>
-    </div> 
-  </nav>
-  
 <div class="main "> 
-<div class="profile"><img src="http://localhost:7000/profilePic/{{user.profile}}" class="rounded-circle"  width="200" height="200" ></div>
+<div class="profile"><img src="http://localhost:7000/profilePic/{{user.profile}}" width="170" height="170" class="rounded-circle"   ></div>
 <div class="data">
-    <h5>UserName: &nbsp;{{user.name}}</h5>
+    <h5 style="text-transform:uppercase " >UserName: &nbsp;{{user.name}}</h5>
     
-    <h5>Email: &nbsp; {{user.email}}</h5>
+    <h5 style="text-transform:uppercase " >Email: &nbsp; {{user.email}}</h5>
     <form #pic="ngForm" (ngSubmit)="changepic(pic.value)">
         <input type="file" class="cho"  (change)="picture($event)">
         <button click="submit" class="btn btn-outline-success cho">Change</button><br>
-    </form>
-   
+    </form> 
 </div>
+
 <div class="post">
     <form #post="ngForm" (ngSubmit)="Post(post.value)">
         <input type="file" class="cho" (change)="image($event)"><br>
@@ -48,7 +22,7 @@
 
 <div class="posts">
 <td *ngFor="let feed of userPost" >
-    <img src="http://localhost:7000/profilePic/{{feed.post}}" width="330" height="330"><br>
+    <img src="http://localhost:7000/profilePic/{{feed.post}}"  width="100%" height="200"><br>
     <h5>Caption: {{feed.comment}}</h5>
 </td>
 </div>

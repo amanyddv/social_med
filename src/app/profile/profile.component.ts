@@ -59,8 +59,5 @@ export class ProfileComponent implements OnInit,DoCheck {
     this.msg.changepic(formdata)
   }
   
-  logout(){
-    this.msg.logout()
-  }
-
+  
 }
