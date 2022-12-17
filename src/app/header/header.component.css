@@ -1,0 +1,8 @@
+.pad a {
+    font-weight: 500;
+    font-size: large;
+}
+
+.pad a:hover {
+    color: white;
+  }

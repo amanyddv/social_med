@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PeopleComponent } from './people/people.component';
 import { ChatComponent } from './chat/chat.component';
 import { ForgetComponent } from './forget/forget.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -24,7 +25,8 @@ import { ForgetComponent } from './forget/forget.component';
     SignUpComponent,
     PeopleComponent,
     ChatComponent,
-    ForgetComponent
+    ForgetComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

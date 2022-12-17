@@ -1,113 +1,126 @@
-.desk{
-
-    position: relative;
-  width: 2000px;
-  height: 1000px;
+.main {
+    position: absolute;
   
-  background: #399B8F;
- 
-}
-.logo{
+  
+    width: 100%;
+    height: 110%;
+  
+    background: #71dae6;
+  }
+  
+  .form{
     position: absolute;
-
-left: 350px;
-top: 150px;
-
-
-border-radius: 60px;
-}
-.form{
+    width: 440px;
+    height: 700px;
+    left: 525px;
+    top: 40px;
+    
+    border-radius: 64px;
+  
+  background: white;
+  border: 1px solid #5A1B1B;
+  backdrop-filter: blur(2px);
+  
+  border-radius: 91px;
+  }
+  .img{
     position: absolute;
-width: 546px;
-height: 869px;
-left: 700px;
-top: 70px;
+    top:100px;
+    left:20px;
+  }
+  .imgs{
+    position: absolute;
+    top:270px;
+    width: 100px;
+    left:50px;
+    height: 30px;
 
-background: #155B60;
-border: 1px solid #5A1B1B;
-backdrop-filter: blur(2px);
-/* Note: backdrop-filter has minimal browser support */
-
-border-radius: 91px;
-}
-
-.img{position: absolute;
-    width: 202px;
-    height: 221px;
-    left: 15px;
-    top: 100px;
-    
-    background: #D9D9D9;
-    border-radius: 38px;}
-
-.imgS{position: absolute;
-    width: 36px;
-    height: 31px;
-    left: 165px;
-    top: 285px;
-    
-    background: #228B85;
+  
     border-radius: 90px;
-    }
-
-.name{position: absolute;
-    width: 428px;
-    height: 44px;
-    left: 50px;
-    top: 432px;
+    background: #71dae6;
+  }
+  .icon{
+    position: absolute;
+  
+  left: 180px;
+  top: 100px;
+  
+  
+  }
+  .logo{
+    position: absolute;
+  
+  left: 240px;
+  top: 190px;
+  
+  
+  border-radius: 60px;
+  }
+  .name{position: absolute;
+    width: 380px;
+    height: 35px;
+    left: 35px;
+    top: 360px;
     
-    background: #155B60;
+    background: white;
     border: 0px}
-.namel{position: absolute;
-        width: 425px;
-        height: 0px;
-        left: 50px;
-        top: 486px;
+    .namel{position: absolute;
+      width: 380px;
+      height: 0px;
+      left: 35px;
+      top: 400px;
+      
+      border: 1px solid #000000;}
+      .email{position: absolute;
+        width: 380px;
+        height: 35px;
+        left: 35px;
+        top: 440px;
         
-        border: 1px solid #000000;}
-    
-    .email{position: absolute;
-        width: 428px;
-        height: 44px;
-        left: 50px;
-        top: 534px;
-        
-        background: #155B60;
+        background: white;
         border: 0px}
-    .emaill{position: absolute;
-        width: 425px;
+    .emaill{
+        position: absolute;
+        width: 380px;
         height: 0px;
-        left: 50px;
-        top: 586px;
+        left: 35px;
+  top: 480px;
+  
+  border: 1px solid #000000;
+  transform: rotate(-0.67deg);
+    }
+      .password{position: absolute;
+        width: 380px;
+        height: 35px;
+        left: 35px;
+        top: 520px;
         
-        border: 1px solid #000000;
-        transform: rotate(-0.13deg);}
-    .password{position: absolute;
-        width: 428px;
-        height: 44px;
-        left: 50px;
-        top: 624px;
-        
-        background: #155B60;
+        background: white;
         border: 0px}
     .passwordl{
         position: absolute;
-width: 425.03px;
-height: 0px;
-left: 50px;
-top: 683px;
-
-border: 1px solid #000000;
-transform: rotate(-0.67deg);
+        width: 380px;
+        height: 0px;
+        left: 35px;
+  top: 560px;
+  
+  border: 1px solid #000000;
+  transform: rotate(-0.67deg);
     }
-
-.signUp{
-    position: absolute;
-width: 239px;
-height: 49px;
-left:150px;
-top: 775px;
-
-background: #2BB090;
-border-radius: 90px;
-}
+    .signup{
+      position: absolute;
+  width: 209px;
+  height: 39px;
+  left:110px;
+  top: 600px;
+  
+  background: #2BB090;
+  border-radius: 90px;
+  }
+  
+  
+  
+  .form button:hover {
+    background: #71dae6;
+  }
+  
