@@ -1,31 +1,4 @@
-
-<nav class="navbar navbar-dark bg-primary">
-    
-  <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" routerLink="../profile" >PROFILE</a>
-      </nav>
-   
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" routerLink="../people" >PEOPLE</a>
-      </nav>
-  
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" routerLink="../chat" >CHAT</a>
-      </nav>
-    
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" (click)="logout()" routerLink="../login" >LOGOUT</a>
-      </nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" (click)="logout()" routerLink="../login" ></a>
-      </nav>
-    
-    
-    <nav class="icon"><img src="./assets/images (1).png" width="250" height="100"></nav>
-  </div> 
-</nav>
-
+<app-header></app-header>
 <div class="main">    
     <table class="table table-striped">
         <thead >
@@ -49,7 +22,7 @@
                 </td>
                 <td style="text-transform:uppercase " class="font" >{{people.name}}</td>
                 <td style="text-transform:uppercase" class="font">{{people.email}}</td>
-                <td><button class="btn btn-primary" ></button></td>
+                
             </tr>
         </tbody>
     </table>

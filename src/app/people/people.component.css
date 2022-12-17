@@ -1,11 +1,10 @@
 .main {
     position: absolute;
-    top: 80px;
+    top: 82px;
     left: 2px;
 
-    width: 2200px;
-    height: 1000px;
-    font-size: x-large;
+    width: 100%;
+    height: auto;
 
     background: #71dae6;
 }
