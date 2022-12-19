@@ -46,9 +46,9 @@ export class ServiceService {
 // user login function 
   login(data:any){
     this.http.post<any>("http://localhost:7000/showData",data).subscribe((res)=>{
-    
-      console.log("jdso;gndng;ldng;dnfg;kd;")
+    if(res!=null){
      this.info(res)
+    }
     });
 
     this.http.post<any>("http://localhost:7000/feed",data).subscribe((res)=>{
@@ -89,5 +89,8 @@ export class ServiceService {
       this.user.profile=res;
       console.log(res)
     })
+  }
+  check(detail:any){
+    return this.http.post<any>("http://localhost:7000/showData",detail)
   }
 }
