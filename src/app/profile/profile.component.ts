@@ -29,14 +29,10 @@ export class ProfileComponent implements OnInit,DoCheck {
   }
 
   // for post a pic
-  pic=""
-  image(event:any){
-    this.pic=event.target.files[0]
-  }
-
+ 
   Post(event:any){
     const formdata =new FormData()
-    formdata.append('file',this.pic);
+    formdata.append('file',this.cpic);
     formdata.append('comment',event.comment);
     formdata.append('email',this.user.email)
     console.log(formdata)
@@ -49,6 +45,8 @@ export class ProfileComponent implements OnInit,DoCheck {
   cpic=""
   picture(event:any){
     this.cpic=event.target.files[0]
+    console.log("cpic")
+    console.log(this.cpic)
   }
 
   changepic(event:any){
@@ -56,6 +54,7 @@ export class ProfileComponent implements OnInit,DoCheck {
     formdata.append('file',this.cpic);
     formdata.append('email',this.user.email)
     console.log(formdata)
+    console.log(this.cpic)
     this.msg.changepic(formdata)
   }
   
