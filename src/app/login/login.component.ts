@@ -15,11 +15,17 @@ export class LoginComponent implements OnInit {
   logi="login"
   login(detail: any) {
 
-    if(detail.email!=""){
     this.msg.login(detail)
     sessionStorage.setItem("loginInfo", JSON.stringify(detail))
-    this.logi="profile";
-    }
+    this.msg.check(detail).subscribe((res)=>{
+      if(res==null){
+        alert("Invalid password")
+      }
+      else{
+        this.logi="profile";
+      }
+    })
+    
    
   }
 }
