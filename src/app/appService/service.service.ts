@@ -30,7 +30,7 @@ export class ServiceService {
   addData(data:any){
     this.userPost=null
     console.log(data)
-    this.http.post<any>("http://localhost:7000/addData",data).subscribe((res)=>{
+    this.http.post<any>("https://social-med-api.vercel.app/addData",data).subscribe((res)=>{
       this.info(res)
     })
 
@@ -38,20 +38,20 @@ export class ServiceService {
   
 //post a pic
   addPost(data:any){
-    return this.http.post<any>("http://localhost:7000/addPost",data)
+    return this.http.post<any>("https://social-med-api.vercel.app/addPost",data)
   }
 
   
   
 // user login function 
   login(data:any){
-    this.http.post<any>("http://localhost:7000/showData",data).subscribe((res)=>{
+    this.http.post<any>("https://social-med-api.vercel.app/showData",data).subscribe((res)=>{
     if(res!=null){
      this.info(res)
     }
     });
 
-    this.http.post<any>("http://localhost:7000/feed",data).subscribe((res)=>{
+    this.http.post<any>("https://social-med-api.vercel.app/feed",data).subscribe((res)=>{
       this.userPost=res
     })
     
@@ -59,7 +59,7 @@ export class ServiceService {
 
 //all member 
   people():Observable<any>{
-    return this.http.get("http://localhost:7000/peopleInfo")
+    return this.http.get("https://social-med-api.vercel.app/peopleInfo")
   }
 
   logout(){
@@ -69,7 +69,7 @@ export class ServiceService {
   }
   //chat
   chat():Observable<any>{
-    return this.http.get("http://localhost:7000/chat")
+    return this.http.get("https://social-med-api.vercel.app/chat")
   }
   msgData={
     email:"",
@@ -78,19 +78,19 @@ export class ServiceService {
   send(msg:any){
     this.msgData.msg=msg.msg
     this.msgData.email=this.user.email
-    return this.http.post<any>("http://localhost:7000/send",this.msgData)
+    return this.http.post<any>("https://social-med-api.vercel.app/send",this.msgData)
   }
   forget(detail:any){
     console.log(detail)
-    this.http.post<any>("http://localhost:7000/forget",detail).subscribe() 
+    this.http.post<any>("https://social-med-api.vercel.app/forget",detail).subscribe() 
   }
   changepic(pic:any){
-    this.http.post<any>("http://localhost:7000/changepic",pic).subscribe((res)=>{
+    this.http.post<any>("https://social-med-api.vercel.app/changepic",pic).subscribe((res)=>{
       this.user.profile=res;
       console.log(res)
     })
   }
   check(detail:any){
-    return this.http.post<any>("http://localhost:7000/showData",detail)
+    return this.http.post<any>("https://social-med-api.vercel.app/showData",detail)
   }
 }
