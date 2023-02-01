@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="main "> 
-<div class="profile"><img src="http://localhost:7000/profilePic/{{user.profile}}" width="170" height="170" class="rounded-circle"   ></div>
+<div class="profile"><img src="https://oealfnepepsbsdmsnqkq.supabase.co/storage/v1/object/public/socialmed/{{user.profile}}" width="170" height="170" class="rounded-circle"   ></div>
 <div class="data">
     <h5 style="text-transform:uppercase " >UserName: &nbsp;{{user.name}}</h5>
     
@@ -34,7 +34,7 @@
 
 <div class="posts">
 <td *ngFor="let feed of userPost" >
-    <img src="http://localhost:7000/profilePic/{{feed.post}}"  width="100%" height="200"><br>
+    <img src="https://oealfnepepsbsdmsnqkq.supabase.co/storage/v1/object/public/socialmed/{{feed.post}}"  width="100%" height="200"><br>
     <h5>Caption: {{feed.comment}}</h5>
 </td>
 </div>
