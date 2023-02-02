@@ -11,8 +11,9 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
 
-   local="http://localhost:7000/"
+   uri="http://localhost:7000/"
    url="https://socialmedapi.vercel.app/"
+   
 
 //user array
   user={
