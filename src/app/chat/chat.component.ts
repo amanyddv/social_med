@@ -11,8 +11,8 @@ export class ChatComponent implements OnInit ,DoCheck{
   data:any
   ngOnInit(): void {
     this.msg.chat().subscribe((res)=>{
-      this.data=res,
-      console.log(res)
+      this.data=res
+    
     })
   }
 
@@ -24,7 +24,7 @@ export class ChatComponent implements OnInit ,DoCheck{
     this.msg.send(msg).subscribe((res)=>{
       this.data.push(res)
     })
-    console.log(msg)
+    
   }
   logout(){
     this.msg.logout()

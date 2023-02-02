@@ -28,7 +28,6 @@ export class SignUpComponent implements OnInit {
 
   }
   signUp(form:any){
-    console.log(form)
     const formdata =new FormData()
     formdata.append('file',this.pic);
     formdata.append('name',form.name);

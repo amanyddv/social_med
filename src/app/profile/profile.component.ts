@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit,DoCheck {
   ngDoCheck():void{
     this.user=this.msg.user
     this.userPost=this.msg.userPost
-    console.log(this.user)
+    
     
   }
 
@@ -35,7 +35,7 @@ export class ProfileComponent implements OnInit,DoCheck {
     formdata.append('file',this.cpic);
     formdata.append('comment',event.comment);
     formdata.append('email',this.user.email)
-    console.log(formdata)
+    
     this.msg.addPost(formdata).subscribe((res)=>{
       this.userPost.push(res)
     });
@@ -45,16 +45,14 @@ export class ProfileComponent implements OnInit,DoCheck {
   cpic=""
   picture(event:any){
     this.cpic=event.target.files[0]
-    console.log("cpic")
-    console.log(this.cpic)
+    
   }
 
   changepic(event:any){
     const formdata =new FormData()
     formdata.append('file',this.cpic);
     formdata.append('email',this.user.email)
-    console.log(formdata)
-    console.log(this.cpic)
+    
     this.msg.changepic(formdata)
   }
   

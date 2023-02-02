@@ -33,7 +33,6 @@ export class ServiceService {
   }
   addData(data:any){
     this.userPost=null
-    console.log(data)
     this.http.post<any>(this.url+"addData",data).subscribe((res)=>{
       this.info(res)
     })
@@ -85,13 +84,11 @@ export class ServiceService {
     return this.http.post<any>(this.url+"send",this.msgData)
   }
   forget(detail:any){
-    console.log(detail)
     this.http.post<any>(this.url+"forget",detail).subscribe() 
   }
   changepic(pic:any){
     this.http.post<any>(this.url+"changepic",pic).subscribe((res)=>{
       this.user.profile=res;
-      console.log(res)
     })
   }
   check(detail:any){
