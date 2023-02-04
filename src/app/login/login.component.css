@@ -6,7 +6,7 @@
 
 position: static;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: #71dae6;
 
   
@@ -79,7 +79,7 @@ border-radius: 90px;
   .form{
    
     width: 80vw;
-    height: 95vh;
+    height: 180vw;
 
   
   }
