@@ -85,5 +85,28 @@
     border-radius: 90px;
 }
 
+.feedimg img{
+    width: 25vw;
+}
+
+@media screen and (max-width: 760px) {
+    .data h5{
+        font-size: 3vw;
+    }
+    .data{
+        top:10vw;
+        left:35vw;
+    }
+    .profile img{
+        width:27vw;
+        height:27vw
+    }
+    .feedimg img{
+        width: 35vw;
+    }
+    .feedimg h5{
+        font-size: 3vw;
+    }
+  }
 
 

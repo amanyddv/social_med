@@ -7,6 +7,7 @@
     height: 200%;
 
     background: #71dae6;
+    
 }
 
 .icon {
@@ -25,3 +26,18 @@
     padding-top: 25px;
     font-weight:500;
 }
+
+img{
+    width:"80";
+     height:"80"
+
+}
+@media screen and (max-width: 760px) {
+    .font{
+        font-size: 3vw;
+    }
+    img{
+        width:10vw;
+        height:10vw
+    }
+  }

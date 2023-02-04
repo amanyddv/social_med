@@ -32,9 +32,9 @@
     </form>
 </div>
 
-<div class="posts row row-cols-lg-3  " >
-<td *ngFor="let feed of userPost" class="col col-1">
-    <img src="https://oealfnepepsbsdmsnqkq.supabase.co/storage/v1/object/public/socialmed/{{feed.post}}"  width="100%" height="200"><br>
+<div class="posts row row-cols-lg-3  row-col-1 " >
+<td *ngFor="let feed of userPost" class="col feedimg">
+    <img src="https://oealfnepepsbsdmsnqkq.supabase.co/storage/v1/object/public/socialmed/{{feed.post}}"  ><br>
     <h5>Caption: {{feed.comment}}</h5>
 </td>
 </div>

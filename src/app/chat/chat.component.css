@@ -38,3 +38,12 @@
     height: 40px;
     border-radius: 90px;
 }
+
+@media screen and (max-width: 760px) {
+    .section div {
+        font-size: 3vw;
+    }
+    .msgg{
+        width:60vw;
+    }
+  }
