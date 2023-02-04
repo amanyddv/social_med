@@ -1,107 +1,102 @@
+*{
+  margin: 0;
+  padding: 1rem;
+}
 .main {
-  position: absolute;
 
-
-  width: 100%;
-  height: 110%;
+position: static;
+  width: 100vw;
+  height: 100vh;
   background: #71dae6;
 
   
 }
 
 .form{
-  position: absolute;
-  width: 440px;
-  height: 700px;
-  left: 525px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  width: 30vw;
+  height: 95vh;
   top: 40px;
   
-  border-radius: 64px;
+  border-radius: 53px;
 
 background: white;
-border: 1px solid #5A1B1B;
-backdrop-filter: blur(2px);
+border: 1px solid #5A1B1B; 
+
 
 border-radius: 91px;
+text-align: center;
 }
+
 .icon{
-  position: absolute;
-
-left: 100px;
-top: 80px;
-
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3vw;
 }
 .logo{
-  position: absolute;
 
-left: 170px;
-top: 190px;
+  padding-top:3vw;
 
 
 border-radius: 60px;
 }
-.email{position: absolute;
-  width: 380px;
-  height: 35px;
-  left: 35px;
-  top: 360px;
+.email{
+  width: 25vw;
+  height: 2vw;
   
-  background: white;
-  border: 0px}
-  .emaill{position: absolute;
-    width: 380px;
-
-    left: 35px;
-    top: 400px;
-    
-    border: 1px solid #000000;}
-    .password{position: absolute;
-      width: 380px;
-      height: 35px;
-      left: 35px;
-      top: 440px;
+  margin-top: 2vw;
+  background: rgb(186, 215, 214);
+ }
+  
+    .password{
+      width: 25vw;
+      height: 2vw;
       
-      background: white;
-      border: 0px}
-  .passwordl{
-      position: absolute;
-      width: 380px;
-      
-      left: 35px;
-top: 480px;
+      background: rgb(186, 215, 214)      }
 
-border: 1px solid #000000;
-transform: rotate(-0.67deg);
-  }
   .login{
-    position: absolute;
-width: 209px;
-height: 39px;
-left:110px;
-top: 520px;
+    margin-top: 3vw;
+    width: 11vw;
+    height: 3vw;
 
+    text-align: center;
+    padding: 0.2vw;
 background: #2BB090;
 border-radius: 90px;
 }
 
-.forget{
-  position: absolute;
-  left:185px;
-  top: 585px;
 
-border-radius: 90px;
-}
-.signup{
-  position: absolute;
-width: 239px;
-height: 49px;
-left: 95px;
-top: 620px;
-
-border-radius: 90px;
-}
 
 .form button:hover {
   background: #71dae6;
+}
+
+@media screen and (max-width: 1050px) {
+  .form{
+   
+    width: 80vw;
+    height: 95vh;
+
+  
+  }
+  .email{
+    width: 60vw;
+    margin-top: 10vh;
+ 
+   }
+    
+      .password{
+        width: 60vw;
+      }
+    .login{
+      margin-top: 10vw;
+      width: 30vw;
+      height: 12vw;
+  
+    
+  }
 }

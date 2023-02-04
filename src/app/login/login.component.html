@@ -1,29 +1,31 @@
 
-<div class="main">
-  <div class="form">
+
+  <div class="main">
+    <div class="form">
       <div class="icon"><img src="./assets/image.png" width="230" height="60"></div>
-                <h2 class="fw-bold mb-2 text-uppercase logo">Login</h2>
 
-                <form #userForm ="ngForm">
-                  <input  class="email" type="text" name="email" placeholder="Email" ngModel><br>
-                  <div class="emaill"></div>
-  
-                  <input class="password" type="password" name="password" placeholder="Password" ngModel><br>
-                  <div class="passwordl"></div>
-  
-  
-                <button class="login" (click)="login(userForm.value)" routerLink="../{{logi}}">Login</button>
-                </form>
+      <h2 class="fw-bold mb-2 text-uppercase logo">Login</h2>
 
-              
-                <div>
-                  <p class="forget" > <a routerLink="../forget" class="text-darkblack-50 fw-bold">Forget</a>
-                  </p>
-                </div>
-              <div>
-                <p class="signup"  >Don't have an account? <a routerLink="../signup" class="text-darkblack-50 fw-bold">Sign Up</a>
-                </p>
-              </div>
+      <form #userForm ="ngForm">
+        <input  class="email" type="text" name="email" placeholder="Email" ngModel><br>
+        <div class="line"></div>
+
+        <input class="password" type="password" name="password" placeholder="Password" ngModel><br>
+        <div class="line"></div>
+
+
+      <button class="login" (click)="login(userForm.value)" routerLink="../{{logi}}">Login</button>
+      </form>
+
+    
+      <div>
+        <p class="forget" > <a routerLink="../forget" class="text-darkblack-50 fw-bold">Forget</a>
+        </p>
+      </div>
+    <div>
+      <p class="signup"  >Don't have an account? <a routerLink="../signup" class="text-darkblack-50 fw-bold">Sign Up</a>
+      </p>
+    </div>
     </div>
   </div>
   
