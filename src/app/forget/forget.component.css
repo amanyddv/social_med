@@ -1,111 +1,117 @@
+*{
+  margin: 0;
+  padding: 1rem;
+}
 .main {
-    position: absolute;
+
+position: static;
+  width: 100vw;
+  height: 100vh;
+  background: #71dae6;
+
   
+}
+
+.form{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  width: 30vw;
+  height: 95vh;
+  top: 40px;
   
-    width: 100%;
-    height: 110%;
-    background: #71dae6;
+  border-radius: 53px;
+
+background: white;
+border: 1px solid #5A1B1B; 
+
+
+border-radius: 91px;
+text-align: center;
+}
+
+.icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3vw;
+}
+.logo{
+
+  padding-top:3vw;
+
+
+border-radius: 60px;
+}
+.email{
+  width: 25vw;
+  height: 2vw;
+  
+  margin-top: 2vw;
+  background: rgb(186, 215, 214);
+ }
+  
+    .oldpassword{
+      width: 25vw;
+      height: 2vw;
+      margin-top: 3vh;
+
+      background: rgb(186, 215, 214)      }
+.newpassword{
+
+    width: 25vw;
+    height: 2vw;
+    margin-top: 3vh;
+    background: rgb(186, 215, 214)      
+}
+  .forget{
+    margin-top: 3vw;
+    width: 11vw;
+    height: 3vw;
+
+    text-align: center;
+    padding: 0.2vw;
+background: #2BB090;
+border-radius: 90px;
+}
+
+
+
+.form button:hover {
+  background: #71dae6;
+}
+
+@media screen and (max-width: 1050px) {
+  .form{
+   
+    width: 80vw;
+    height: 95vh;
 
   
   }
-  
-  .form{
-    position: absolute;
-    width: 440px;
-    height: 700px;
-    left: 525px;
-    top: 40px;
+  .email{
+    width: 60vw;
+    margin-top: 10vh;
+ 
+   }
     
-    border-radius: 64px;
+      .password{
+        width: 60vw;
+      }
+    .forget{
+      margin-top: 10vw;
+      width: 30vw;
+      height: 12vw;
   
-  background: white;
-  border: 1px solid #5A1B1B;
-  backdrop-filter: blur(2px);
-  
-  border-radius: 91px;
-  }
-  .icon{
-    position: absolute;
-  
-  left: 100px;
-  top: 80px;
-  
-  
-  }
-  .logo{
-    position: absolute;
-  
-  left: 160px;
-  top: 190px;
-  
-  
-  border-radius: 60px;
-  }
-  .email{position: absolute;
-    width: 380px;
-    height: 35px;
-    left: 35px;
-    top: 360px;
     
-    background: white;
-    border: 0px}
-    .emaill{position: absolute;
-      width: 380px;
-      height: 0px;
-      left: 35px;
-      top: 400px;
-      
-      border: 1px solid #000000;}
-      .oldpassword{position: absolute;
-        width: 380px;
-        height: 35px;
-        left: 35px;
-        top: 440px;
-        
-        background: white;
-        border: 0px}
-    .oldpasswordl{
-        position: absolute;
-        width: 380px;
-        height: 0px;
-        left: 35px;
-  top: 480px;
-  
-  border: 1px solid #000000;
-  transform: rotate(-0.67deg);
-    }
-      .newpassword{position: absolute;
-        width: 380px;
-        height: 35px;
-        left: 35px;
-        top: 520px;
-        
-        background: white;
-        border: 0px}
-    .newpasswordl{
-        position: absolute;
-        width: 380px;
-        height: 0px;
-        left: 35px;
-  top: 560px;
-  
-  border: 1px solid #000000;
-  transform: rotate(-0.67deg);
-    }
-    .login{
-      position: absolute;
-  width: 209px;
-  height: 39px;
-  left:110px;
-  top: 600px;
-  
-  background: #2BB090;
-  border-radius: 90px;
   }
-  
-  
-  
-  .form button:hover {
-    background: #71dae6;
+  .oldpassword{
+    width: 60vw;  
   }
+.newpassword{
+
+  width: 60vw; 
   
+}
+}

@@ -1,53 +1,55 @@
+*{
+  margin: 0;
+  padding: 1rem;
+}
 .main {
-    position: absolute;
-  
-  
-    width: 100%;
-    
-  
-    background: #71dae6;
-  }
-  
-  .form{
-    position: absolute;
-    width: 440px;
-    height: 700px;
-    left: 525px;
-    top: 40px;
-    
-    border-radius: 64px;
-  
-  background: white;
-  border: 1px solid #5A1B1B;
-  backdrop-filter: blur(2px);
-  
-  border-radius: 91px;
-  }
-  .img{
-    position: absolute;
-    top:100px;
-    left:20px;
-    border-radius: 50px;
-  }
-  .imgs{
-    position: absolute;
-    top:240px;
-    width: 0px;
-    left:170px;
-    height: 0px;
+
+position: static;
+  width: 100vw;
+  height: 100vh;
+  background: #71dae6;
 
   
-    border-radius: 90px;
-    background: #71dae6;
+}
+  
+.form{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  width: 30vw;
+  height: 95vh;
+  top: 40px;
+  
+  border-radius: 53px;
+
+background: white;
+border: 1px solid #5A1B1B; 
+padding: 0vw;
+text-align: center;
+
+border-radius: 91px;
+}
+
+  .img{
+    top:1vh;
+    border-radius: 50px;
+    width: 12vw;
+    height: 12vw;
+    padding: 0vw;
+    margin: 0vw;
+
   }
   .icon{
-    position: absolute;
-  
-  left: 180px;
-  top: 100px;
-  
-  
-  }
+      padding: 0vw;
+      margin-top:2vh;
+    
+    width: 15vw;
+    height: 4vw;
+    }
+
+   
+ 
   .logo{
     position: absolute;
   
@@ -57,64 +59,35 @@
   
   border-radius: 60px;
   }
-  .name{position: absolute;
-    width: 380px;
-    height: 35px;
-    left: 35px;
-    top: 360px;
+ 
+  .name{
+    width: 25vw;
+    height: 2vw;
     
-    background: white;
-    border: 0px}
-    .namel{position: absolute;
-      width: 380px;
-      height: 0px;
-      left: 35px;
-      top: 400px;
-      
-      border: 1px solid #000000;}
-      .email{position: absolute;
-        width: 380px;
-        height: 35px;
-        left: 35px;
-        top: 440px;
-        
-        background: white;
-        border: 0px}
-    .emaill{
-        position: absolute;
-        width: 380px;
-        height: 0px;
-        left: 35px;
-  top: 480px;
+    margin-top: 1vw;
+    background: rgb(186, 215, 214);
+   }
+    
+      .email{
+        width: 25vw;
+        height: 2vw;
+        margin-top: 3vh;
   
-  border: 1px solid #000000;
-  transform: rotate(-0.67deg);
-    }
-      .password{position: absolute;
-        width: 380px;
-        height: 35px;
-        left: 35px;
-        top: 520px;
-        
-        background: white;
-        border: 0px}
-    .passwordl{
-        position: absolute;
-        width: 380px;
-        height: 0px;
-        left: 35px;
-  top: 560px;
+        background: rgb(186, 215, 214)      }
+  .password{
   
-  border: 1px solid #000000;
-  transform: rotate(-0.67deg);
-    }
+      width: 25vw;
+      height: 2vw;
+      margin-top: 3vh;
+      background: rgb(186, 215, 214)      
+  }
     .signup{
-      position: absolute;
-  width: 209px;
-  height: 39px;
-  left:110px;
-  top: 600px;
+      margin-top: 3vw;
+      width: 11vw;
+      height: 3vw;
   
+      text-align: center;
+      padding: 0.2vw;
   background: #2BB090;
   border-radius: 90px;
   }
@@ -123,5 +96,45 @@
   
   .form button:hover {
     background: #71dae6;
+  }
+  @media screen and (max-width: 1050px) {
+    .form{
+     
+      width: 80vw;
+      height: 95vh;
+  
+    
+    }
+    .icon{
+      
+    
+    width: 50vw;
+    height: 10vw;
+    }
+
+  .name{
+    width: 60vw;
+    
+    
+   }
+    .email{
+      width: 60vw;
+   
+     }
+      
+        .password{
+          width: 60vw;
+        }
+      .signup{
+        margin-top: 10vw;
+        width: 30vw;
+        height: 12vw;
+      }
+      .img{
+        
+        width: 40vw;
+        height: 40vw;
+       
+      }
   }
   

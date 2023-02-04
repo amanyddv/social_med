@@ -1,33 +1,36 @@
+
+   
+        
+
+
 <div class="main">
-    <div class="form">
-        <form #userForm="ngForm" >
-            <div class="icon"><img src="./assets/image.png" width="250" height="60"></div>
+        <div class="form">
+            <form #userForm="ngForm" >
+                <img src="./assets/image.png" class="icon">
 
-        <img class="img" [src]="img" width="170" height="170">
-        <h2 class="fw-bold mb-2 text-uppercase logo">SIGNUP</h2>
+                    <h2 class="fw-bold mb-2  ">SIGNUP</h2>
+            
+                    
+               <img [src]="img" class="img" >    
+                
+                   
 
-        <div >
-            <label class="imgs" for="file-input">
-              <img src="./assets/pngegg.png" widht="20px" height="20px"/>
-            </label>
-            <input   class="imgs" id="file-input" type="file" (change)="image($event)" >
-          
-        </div>
+
+         
+            <input    type="file" (change)="image($event)" >
+
+        
         
 
         <input  class="name" type="text" name="name" placeholder="Name" ngModel><br>
-        <div class="namel"></div>
        
         <input class="email" type="email" name="email" placeholder="Email" ngModel><br>
-        <div class="emaill"></div>
 
         <input class="password" type="password" name="password" placeholder="Password" ngModel><br>
-        <div class="passwordl"></div>
 
         <button class="signup" (click)="signUp(userForm.value)"  routerLink="../profile">SignUp</button>
-    
-    
-        </form>
-    </div>
 
+            </form>
+
+        </div>
 </div>
